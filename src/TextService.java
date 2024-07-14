@@ -11,12 +11,6 @@ public class TextService {
 
     }
 
-    public void textModifier(Text text) {
-
-        System.out.println(resultSum(resultPlus(resultMinus(resultDelimiter(text.getScanner())))));
-
-    }
-
     public StringBuilder resultDelimiter(String string) {
         return new StringBuilder(
                 Arrays.stream(string.split(" "))
