@@ -3,6 +3,14 @@ import java.util.stream.Collectors;
 
 public class TextService {
 
+    Text text;
+
+    public TextService(Text text){
+
+        this.text =text;
+
+    }
+
     public void textModifier(Text text) {
 
         System.out.println(resultSum(resultPlus(resultMinus(resultDelimiter(text.getScanner())))));
